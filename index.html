@@ -152,6 +152,14 @@ kbd{font-family:var(--body);font-size:12px;font-weight:800;background:#fff;borde
       </div>
 
       <div class="field">
+        <span class="label">Гра</span>
+        <div class="seg">
+          <label><input type="radio" name="gtype" value="chase" checked><span>Доганялки</span></label>
+          <label><input type="radio" name="gtype" value="hide"><span>Хованки</span></label>
+        </div>
+      </div>
+
+      <div class="field">
         <span class="label">Language · Мова</span>
         <div class="seg">
           <label><input type="radio" name="lang" value="uk"><span>Українська</span></label>
@@ -272,7 +280,7 @@ let LANG='uk',GFX='high';
 try{GFX=localStorage.getItem('labrador-gfx')==='low'?'low':'high';}catch(e){}
 const LOW=GFX==='low';
 try{LANG=localStorage.getItem('labrador-lang')||(/^(uk|ru)/i.test(navigator.language||'')?'uk':'en');}catch(e){LANG=/^(uk|ru)/i.test(navigator.language||'')?'uk':'en';}
-const TRD=[["Гіркою можна зʼїхати з турбо, а знизу нею можна забігти нагору", "Slide down for turbo, or run up a slide from the bottom"], ["Y — фрази, 1–5 — емодзі, Tab — велика карта, R — нюх дівчини", "Y for phrases, 1 to 5 for emojis, Tab for the big map, R for the girl's sniff"], ["Ця спіраль піднімає на скелю. Звідти можна стрибнути у воду", "This spiral lifts you onto the crag. Jump off into the lake"], ["У трубу влазить лише песик. Ховатися там можна 4 секунди", "Only the dog fits in a pipe. He can hide there for 4 seconds"], ["Стань у вітрову спіраль, і вона підніме тебе нагору", "Step into the wind spiral and it lifts you up"], ["Синя пружина закидає на острів чи хмару над тобою", "A blue spring throws you onto the island or cloud above"], ["Батут перекидає через живопліт, трубу чи річку", "A trampoline throws you over hedges, pipes and the river"], ["Зупинись у листі, щоб сховатися на 8 секунд", "Stand still in the leaves to hide for 8 seconds"], ["Біжи просто в драбину, щоб залізти нагору", "Run straight into a ladder to climb up"], ["Нора виносить песика в інший кінець світу", "A burrow pops the dog out far away"], ["Підійди до дракона впритул, і він покатає", "Walk right up to a dragon for a ride"], ["Гармата вистрілює тобою далеко вперед", "A cannon shoots you far ahead"], ["Стебло велетня веде в хмарне царство", "The beanstalk climbs to the cloud kingdom"], ["Нюх: готовий (R)", "Sniff: ready (R)"], ["Нюх: готовий (,)", "Sniff: ready (,)"], ["Проста (швидша)", "Simple (faster)"], ["Нюх-нюх!", "Sniff-sniff!"], ["Графіка", "Graphics"], ["Нюх: ", "Sniff: "], ["Гарна", "Pretty"], ["Повільна черепашка!", "Slow little turtle!"], ["Нікуди не дінешся!", "Nowhere to run!"], ["Все одно зловлю!", "I'll catch you anyway!"], ["Бачу твій хвіст!", "I see your tail!"], ["Обійми неминучі!", "Hugs are inevitable!"], ["Ой, як страшно!", "Ooh, so scary!"], ["Я вже близько!", "I'm getting close!"], ["Ще побігаємо?", "One more lap?"], ["Гарний песик!", "Good doggy!"], ["Гав-гав-гав!", "Woof-woof-woof!"], ["Іди до мене!", "Come to me!"], ["Шукай мене!", "Come find me!"], ["Люблю тебе!", "Love you!"], ["Y: фрази", "Y: phrases"], ["Я тут!", "Over here!"], [" хв. Песик перемагає, якщо час спливе раніше. Кісточки повертають песику сили, сердечка дають дівчині силу і швидкість. Песик пролазить крізь кущі та добре плаває, а після кожних обіймів дівчина рахує до трьох. Пригоди: песик риє слизькі калюжі та пірнає в нори, які виносять його в інший кінець парку. Дівчина кидає мʼячик, перед яким песик не може встояти. Сосиска і золоте серце дають турбо. Світ величезний: на сході й півдні є засніжені гори, на які можна вибігти, лабіринт із живоплоту, чайна пустеля, грибний гай, велике озеро і камʼяне коло. Через увесь край тече річка: песик її перепливає, дівчина бреде повільно або шукає місток. За все нараховуються очки, найкращий результат запамʼятовується. Кожні пів хвилини щось стається: смаколики стають золотими, карту ховає туман або всіх підганяє вітер. Золотий промінь показує турбо-смаколик здалеку. Червоні гриби-батути перекидають через живопліт і річку. Щораунду десь захований скарб: підказка «холодно/гаряче» біля імені, знахідка дає 300 очок і довге турбо. Над хмарами є ще вищий рівень, хмарне царство: туди веде стебло велетня біля центральної площі. На пагорб можна забігти просто гіркою, або піднятися вітровою спіраллю. Сині пружини підкидають на острови й хмари над ними. На далекому сході стоїть Музей Анни: палац із трьома галереями довкола двору зі скляною пірамідою, на стінах висять її картини. Туди веде доріжка і пʼятий дракон. Є верхній рівень: небесні острови з містками. Нагору несе вітрова спіраль під островами або гармата, вниз можна зʼїхати довгою гіркою чи просто стрибнути. Гармати стріляють тобою через пів карти. Чотири дракони катають між площею, сніговою вершиною і камʼяним колом: просто підійди до дракона. Раунд починається вдень і закінчується під зорями. Відкривай нові місця: перше відвідування дає турбо. Клацни по грі, щоб повертати камеру мишкою (Esc відпускає мишку). Біля великого озера стоїть скеля: вітрова спіраль біля її підніжжя піднімає на вершину, а звідти можна стрибнути у воду. Парк величезний: у бетонні труби влазить лише песик (але ховатися там можна 4 секунди, потім дівчина дістане), на пагорби й вежі ведуть драбини (дівчина лазить швидше), а з гірки зʼїжджаєш із турбо.", " min. The dog wins if time runs out first. Bones give the dog energy back, hearts give the girl energy and speed. The dog slips through bushes and swims well, and after every hug the girl counts to three. The dog digs slippery puddles (Q) and dives into burrows that pop him out far away; the girl throws a ball (Q) the dog cannot resist. A sausage and a golden heart give turbo, and a beam of light shows them from afar. The world is huge: snowy mountains you can run up, a hedge maze, a tea desert, a mushroom grove, lakes, a river (the dog swims it, the girl wades slowly or takes a bridge). Only the dog fits into pipes, but he can hide there for just 4 seconds. Ladders, wind spirals and slides lead up the hills (you can run up a slide too). Red mushroom trampolines throw you over hedges, blue springs and cannons shoot you up to the sky islands, and the giant's beanstalk by the central plaza climbs to the cloud kingdom. Five dragons fly you around: just walk up to one. In the far east stands Anna's Museum with her paintings. Every round a treasure is hidden somewhere: follow the cold/hot hint by your name. Every half a minute something happens: golden treats, fog, or a tailwind. The dog can hide in piles of leaves for 8 seconds, but he leaves paw prints. Hold Tab for the big map. Keys 1 to 5 are emojis. Click the game to turn the camera with the mouse (Esc lets go). Everything earns points and your best score is kept."], ["Чекаємо на другого гравця. Він має відкрити цю сторінку у своєму акаунті Claude й обрати «Онлайн».", "Waiting for the other player. They need to open this page in their Claude account and choose Online."], ["Онлайн на цій сторінці недоступний. Відкрийте гру як файл у браузері: там є зʼєднання за кодом.", "Online is not available on this page. Open the game as a file in the browser: connecting by code works there."], ["Один тисне «Створити гру» і передає код. Другий вводить код і тисне «Приєднатися».", "One presses Create game and shares the code. The other types the code and presses Join."], ["На телефоні: водіть пальцем по своїй половині екрана. Сильний потяг вмикає ривок.", "On a phone: drag your finger on your half of the screen. A strong pull turns on the sprint."], ["Передай цей код другому гравцеві. Він вводить його в себе й тисне «Приєднатися».", "Give this code to the other player. They type it in and press Join."], ["Не вдалося створити кімнату. Перевір інтернет і спробуй ще раз.", "Could not create a room. Check the internet and try again."], ["Не вдалося завантажити модуль звʼязку. Перевір інтернет.", "Could not load the connection module. Check the internet."], ["В онлайні гра не зупиняється. Повертайся швидше!", "Online the game does not stop. Come back soon!"], ["Ви обоє обрали одну роль. Хтось має її змінити.", "You both picked the same role. One of you has to change it."], ["Він тікає парком. Вона наздоганяє і обіймає.", "He runs away through the park. She chases and hugs."], ["Жодних обіймів за раунд. Потрібен реванш!", "Not a single hug this round. A rematch is needed!"], ["W A S D або стрілки · Shift · Q калюжа", "W A S D or arrows · Shift · Q puddle"], ["Стрілки або W A S D · Shift · Q мʼячик", "Arrows or W A S D · Shift · Q ball"], ["Дівчина перемагає, якщо обійме песика", "The girl wins if she hugs the dog"], ["Песик перепочиває. Обійми зачекають.", "The dog is taking a breather. Hugs can wait."], ["Зʼєднано, чекаємо на другого гравця…", "Connected, waiting for the other player…"], ["Помилка зʼєднання. Спробуй ще раз.", "Connection error. Try again."], ["Онлайн, кожен зі свого комп'ютера", "Online, each on their own computer"], ["Золота хвилина! Смаколики з турбо", "Golden minute! Turbo treats"], ["Стрілки · правий Shift · / мʼячик", "Arrows · right Shift · / ball"], ["Туман! Карта зникла на 10 секунд", "Fog! The map is gone for 10 seconds"], ["W A S D · лівий Shift · Q калюжа", "W A S D · left Shift · Q puddle"], ["Але обіймів він таки отримав:", "But he still got this many hugs:"], ["Другий гравець не на звʼязку.", "The other player is not connected."], ["Здібність: калюжа або м'ячик", "Ability: puddle or ball"], ["наздогнала і обійняла песика", "caught and hugged the dog"], ["разів. Від любові не втечеш.", "times. You can't run from love."], ["Другий гравець відключився.", "The other player disconnected."], ["Чекаємо на другого гравця…", "Waiting for the other player…"], ["Вітер у спину! Усі летять", "Tailwind! Everybody flies"], ["Введи код із пʼяти літер.", "Enter the five-letter code."], ["не знайдено. Перевір код.", "not found. Check the code."], ["Залишилась одна хвилина!", "One minute left!"], ["Смаколики знову золоті!", "The treats are golden again!"], ["Удвох на одному екрані", "Two on one screen"], ["кинути м'ячик (онлайн:", "throw a ball (online:"], ["Песик вийшов у меню.", "The dog went back to the menu."], ["Я сама, за дівчину", "Solo, as the girl"], ["Останні 10 секунд!", "Last 10 seconds!"], ["Створюємо кімнату…", "Creating a room…"], ["). Можна починати!", "). Ready to start!"], ["Чекаємо на песика…", "Waiting for the dog…"], ["Ігрове поле: парк", "Playing field: the park"], ["Від третьої особи", "Third person"], ["Обійми перемогли!", "Hugs win!"], ["Tab: велика карта", "Tab: big map"], ["Я сам, за песика", "Solo, as the dog"], ["Хто ти в онлайні", "Who are you online"], ["Музична скринька", "Music box"], ["знаходить скарб!", "finds the treasure!"], ["Політ на драконі", "Dragon flight"], ["Лабрадор-утікач", "Runaway Labrador"], ["Волосся дівчини", "Girl's hair"], ["Снігова вершина", "Snowy peak"], ["Серце лабіринту", "Heart of the maze"], ["Небесні острови", "Sky islands"], [", новий рекорд!", ", new record!"], ["Кімнату з кодом", "Room with code"], ["Рахуй до трьох:", "Count to three:"], ["Скарб знайдено", "Treasure found"], ["Хмарне царство", "Cloud kingdom"], ["Підключаємося…", "Connecting…"], ["Стебло велетня", "Beanstalk"], ["На весь екран", "Full screen"], ["Здібність (Q)", "Ability (Q)"], ["вирити калюжу", "dig a puddle"], ["зовсім поруч!", "right here!"], ["Чайна пустеля", "Tea desert"], ["ВОНА ДІСТАНЕ!", "SHE CAN REACH!"], ["Ім'я дівчини", "Girl's name"], ["Створити гру", "Create game"], ["правий Shift", "right Shift"], ["дуже холодно", "very cold"], ["Камʼяне коло", "Stone circle"], ["Ой, слизько!", "Oops, slippery!"], ["Зʼєднуємося…", "Connecting…"], ["картина Анни", "will hang here"], ["Пауза (Esc)", "Pause (Esc)"], ["Ім'я песика", "Dog's name"], ["Код кімнати", "Room code"], ["Приєднатися", "Join"], ["лівий Shift", "left Shift"], ["Грибний гай", "Mushroom grove"], ["Не доженеш!", "Can't catch me!"], ["Мій песику!", "My doggy!"], ["На звʼязку:", "Connected:"], ["Без музики", "No music"], ["Почати гру", "Start game"], ["Продовжити", "Resume"], ["МУЗЕЙ АННИ", "ANNA'S MUSEUM"], ["Гав! Лови!", "Woof! Catch me!"], ["Обнімашки!", "Huggies!"], ["+швидкість", "+speed"], [" разів за ", " times in "], ["Я дівчина", "I'm the girl"], ["Каштанове", "Chestnut"], ["повертати", "turn"], ["покликати", "call"], ["Відкрито:", "Discovered:"], ["Іди сюди!", "Come here!"], ["Ану стій!", "Hey, stop!"], ["Летимо-о!", "We're flying!"], [". Реванш?", ". Rematch?"], ["Звук (M)", "Sound (M)"], ["Хто грає", "Who plays"], ["гавкнути", "bark"], ["кісточок", "bones"], ["Ще раунд", "Play again"], ["Гав-гав!", "Woof-woof!"], ["Пружина!", "Boing!"], ["Мʼячик!!", "A ball!!"], ["У ТРУБІ:", "IN PIPE:"], ["У ЛИСТІ:", "IN LEAVES:"], ["ПОВІЛЬНО", "SLOW"], ["Тут буде", "A painting by Anna"], ["Дракон ·", "Dragon ·"], ["Лабіринт", "Maze"], ["Я песик", "I'm the dog"], ["вперед,", "forward,"], ["Дівчина", "Girl"], ["обіймів", "hugs"], ["холодно", "cold"], ["Ба-бах!", "Ka-boom!"], ["Ві-і-і!", "Wheee!"], ["(рекорд", "(record"], ["· Місця", "· Places"], ["Обійми!", "Hug!"], ["гравець", "player"], ["дівчина", "girl"], ["Камера", "Camera"], ["Музика", "Music"], ["Біляве", "Blonde"], ["Русяве", "Light brown"], ["Пробіл", "Space"], ["У меню", "To menu"], ["Скарб:", "Treasure:"], ["гаряче", "hot"], ["Острів", "Island"], ["Ого-о!", "Whoa!"], ["Юху-у!", "Woo-hoo!"], ["Апчхи!", "Achoo!"], ["турбо!", "turbo!"], ["Тікай!", "Run!"], ["Туман:", "Fog:"], ["Кохана", "Sweetheart"], ["Пауза", "Pause"], ["Згори", "Top-down"], ["Техно", "Techno"], ["Раунд", "Round"], ["Чорне", "Black"], ["бігти", "run"], ["назад", "back"], ["ривок", "sprint"], ["тепло", "warm"], ["Музей", "Museum"], ["Скеля", "The crag"], ["Плюх!", "Splash!"], ["утік!", "got away!"], [" очок", " points"], ["Вжух!", "Whoosh!"], ["+сили", "+energy"], ["ТУРБО", "TURBO"], ["песик", "dog"], ["Песик", "Doggy"], ["Площа", "Plaza"], ["Звук", "Sound"], ["2 хв", "2 min"], ["3 хв", "3 min"], ["5 хв", "5 min"], ["Руде", "Red"], ["Гав!", "Woof!"], ["Гоп!", "Hop!"], ["або", "or"], ["КОД", "CODE"], ["час", "time"], ["Дракон", "Dragon"], ["Гірка: можна забігти", "Slide: run up it"], ["Листя: сховайся", "Leaves: hide here"], ["Вітер на скелю", "Wind to the crag"], ["Вітер нагору", "Wind lift"], ["Драбина", "Ladder"], ["Батут", "Trampoline"], ["Пружина", "Spring"], ["Гармата", "Cannon"], ["Нора", "Burrow"], ["Труба", "Pipe"]];
+const TRD=[["Хованки: песик 30 секунд ховається біля площі, обирає позу (E) і колір (Q) і завмирає. Потім дівчина шукає його і стріляє сердечками (Q). Шість сердечок і півтори хвилини.", "Hide and seek: the dog has 30 seconds to hide near the plaza, picks a pose (E) and a colour (Q) and freezes. Then the girl looks for him and shoots hearts (Q). Six hearts and a minute and a half."], [" так добре сховався, що його не знайшли.", " hid so well that nobody found him."], ["Ховайся біля площі! Q — колір, E — поза", "Hide near the plaza! Q for colour, E for pose"], ["Шукай песика! Q — постріл сердечком", "Find the dog! Q shoots a heart"], [" влучила сердечком у песика.", " hit the dog with a heart."], ["Сердечка скінчились!", "Out of hearts!"], ["Q: колір · E: поза", "Q: colour · E: pose"], ["Замри! Вона шукає", "Freeze! She is looking"], ["Не підглядай! ", "No peeking! "], [" · Q: постріл", " · Q: shoot"], ["Нюх: гаряче!", "Sniff: hot!"], ["Нюх: холодно", "Sniff: cold"], ["Не знайшла!", "Not found!"], ["Сердечок: ", "Hearts: "], ["Нюх: тепло", "Sniff: warm"], ["Доганялки", "Chase"], ["Ховайся! ", "Hide! "], ["Знайшла!", "Found him!"], ["Хованки", "Hide and seek"], ["Гра", "Game"], ["Гіркою можна зʼїхати з турбо, а знизу нею можна забігти нагору", "Slide down for turbo, or run up a slide from the bottom"], ["Y — фрази, 1–5 — емодзі, Tab — велика карта, R — нюх дівчини", "Y for phrases, 1 to 5 for emojis, Tab for the big map, R for the girl's sniff"], ["Ця спіраль піднімає на скелю. Звідти можна стрибнути у воду", "This spiral lifts you onto the crag. Jump off into the lake"], ["У трубу влазить лише песик. Ховатися там можна 4 секунди", "Only the dog fits in a pipe. He can hide there for 4 seconds"], ["Стань у вітрову спіраль, і вона підніме тебе нагору", "Step into the wind spiral and it lifts you up"], ["Синя пружина закидає на острів чи хмару над тобою", "A blue spring throws you onto the island or cloud above"], ["Батут перекидає через живопліт, трубу чи річку", "A trampoline throws you over hedges, pipes and the river"], ["Зупинись у листі, щоб сховатися на 8 секунд", "Stand still in the leaves to hide for 8 seconds"], ["Біжи просто в драбину, щоб залізти нагору", "Run straight into a ladder to climb up"], ["Нора виносить песика в інший кінець світу", "A burrow pops the dog out far away"], ["Підійди до дракона впритул, і він покатає", "Walk right up to a dragon for a ride"], ["Гармата вистрілює тобою далеко вперед", "A cannon shoots you far ahead"], ["Стебло велетня веде в хмарне царство", "The beanstalk climbs to the cloud kingdom"], ["Нюх: готовий (R)", "Sniff: ready (R)"], ["Нюх: готовий (,)", "Sniff: ready (,)"], ["Проста (швидша)", "Simple (faster)"], ["Нюх-нюх!", "Sniff-sniff!"], ["Графіка", "Graphics"], ["Нюх: ", "Sniff: "], ["Гарна", "Pretty"], ["Повільна черепашка!", "Slow little turtle!"], ["Нікуди не дінешся!", "Nowhere to run!"], ["Все одно зловлю!", "I'll catch you anyway!"], ["Бачу твій хвіст!", "I see your tail!"], ["Обійми неминучі!", "Hugs are inevitable!"], ["Ой, як страшно!", "Ooh, so scary!"], ["Я вже близько!", "I'm getting close!"], ["Ще побігаємо?", "One more lap?"], ["Гарний песик!", "Good doggy!"], ["Гав-гав-гав!", "Woof-woof-woof!"], ["Іди до мене!", "Come to me!"], ["Шукай мене!", "Come find me!"], ["Люблю тебе!", "Love you!"], ["Y: фрази", "Y: phrases"], ["Я тут!", "Over here!"], [" хв. Песик перемагає, якщо час спливе раніше. Кісточки повертають песику сили, сердечка дають дівчині силу і швидкість. Песик пролазить крізь кущі та добре плаває, а після кожних обіймів дівчина рахує до трьох. Пригоди: песик риє слизькі калюжі та пірнає в нори, які виносять його в інший кінець парку. Дівчина кидає мʼячик, перед яким песик не може встояти. Сосиска і золоте серце дають турбо. Світ величезний: на сході й півдні є засніжені гори, на які можна вибігти, лабіринт із живоплоту, чайна пустеля, грибний гай, велике озеро і камʼяне коло. Через увесь край тече річка: песик її перепливає, дівчина бреде повільно або шукає місток. За все нараховуються очки, найкращий результат запамʼятовується. Кожні пів хвилини щось стається: смаколики стають золотими, карту ховає туман або всіх підганяє вітер. Золотий промінь показує турбо-смаколик здалеку. Червоні гриби-батути перекидають через живопліт і річку. Щораунду десь захований скарб: підказка «холодно/гаряче» біля імені, знахідка дає 300 очок і довге турбо. Над хмарами є ще вищий рівень, хмарне царство: туди веде стебло велетня біля центральної площі. На пагорб можна забігти просто гіркою, або піднятися вітровою спіраллю. Сині пружини підкидають на острови й хмари над ними. На далекому сході стоїть Музей Анни: палац із трьома галереями довкола двору зі скляною пірамідою, на стінах висять її картини. Туди веде доріжка і пʼятий дракон. Є верхній рівень: небесні острови з містками. Нагору несе вітрова спіраль під островами або гармата, вниз можна зʼїхати довгою гіркою чи просто стрибнути. Гармати стріляють тобою через пів карти. Чотири дракони катають між площею, сніговою вершиною і камʼяним колом: просто підійди до дракона. Раунд починається вдень і закінчується під зорями. Відкривай нові місця: перше відвідування дає турбо. Клацни по грі, щоб повертати камеру мишкою (Esc відпускає мишку). Біля великого озера стоїть скеля: вітрова спіраль біля її підніжжя піднімає на вершину, а звідти можна стрибнути у воду. Парк величезний: у бетонні труби влазить лише песик (але ховатися там можна 4 секунди, потім дівчина дістане), на пагорби й вежі ведуть драбини (дівчина лазить швидше), а з гірки зʼїжджаєш із турбо.", " min. The dog wins if time runs out first. Bones give the dog energy back, hearts give the girl energy and speed. The dog slips through bushes and swims well, and after every hug the girl counts to three. The dog digs slippery puddles (Q) and dives into burrows that pop him out far away; the girl throws a ball (Q) the dog cannot resist. A sausage and a golden heart give turbo, and a beam of light shows them from afar. The world is huge: snowy mountains you can run up, a hedge maze, a tea desert, a mushroom grove, lakes, a river (the dog swims it, the girl wades slowly or takes a bridge). Only the dog fits into pipes, but he can hide there for just 4 seconds. Ladders, wind spirals and slides lead up the hills (you can run up a slide too). Red mushroom trampolines throw you over hedges, blue springs and cannons shoot you up to the sky islands, and the giant's beanstalk by the central plaza climbs to the cloud kingdom. Five dragons fly you around: just walk up to one. In the far east stands Anna's Museum with her paintings. Every round a treasure is hidden somewhere: follow the cold/hot hint by your name. Every half a minute something happens: golden treats, fog, or a tailwind. The dog can hide in piles of leaves for 8 seconds, but he leaves paw prints. Hold Tab for the big map. Keys 1 to 5 are emojis. Click the game to turn the camera with the mouse (Esc lets go). Everything earns points and your best score is kept."], ["Чекаємо на другого гравця. Він має відкрити цю сторінку у своєму акаунті Claude й обрати «Онлайн».", "Waiting for the other player. They need to open this page in their Claude account and choose Online."], ["Онлайн на цій сторінці недоступний. Відкрийте гру як файл у браузері: там є зʼєднання за кодом.", "Online is not available on this page. Open the game as a file in the browser: connecting by code works there."], ["Один тисне «Створити гру» і передає код. Другий вводить код і тисне «Приєднатися».", "One presses Create game and shares the code. The other types the code and presses Join."], ["На телефоні: водіть пальцем по своїй половині екрана. Сильний потяг вмикає ривок.", "On a phone: drag your finger on your half of the screen. A strong pull turns on the sprint."], ["Передай цей код другому гравцеві. Він вводить його в себе й тисне «Приєднатися».", "Give this code to the other player. They type it in and press Join."], ["Не вдалося створити кімнату. Перевір інтернет і спробуй ще раз.", "Could not create a room. Check the internet and try again."], ["Не вдалося завантажити модуль звʼязку. Перевір інтернет.", "Could not load the connection module. Check the internet."], ["В онлайні гра не зупиняється. Повертайся швидше!", "Online the game does not stop. Come back soon!"], ["Ви обоє обрали одну роль. Хтось має її змінити.", "You both picked the same role. One of you has to change it."], ["Він тікає парком. Вона наздоганяє і обіймає.", "He runs away through the park. She chases and hugs."], ["Жодних обіймів за раунд. Потрібен реванш!", "Not a single hug this round. A rematch is needed!"], ["W A S D або стрілки · Shift · Q калюжа", "W A S D or arrows · Shift · Q puddle"], ["Стрілки або W A S D · Shift · Q мʼячик", "Arrows or W A S D · Shift · Q ball"], ["Дівчина перемагає, якщо обійме песика", "The girl wins if she hugs the dog"], ["Песик перепочиває. Обійми зачекають.", "The dog is taking a breather. Hugs can wait."], ["Зʼєднано, чекаємо на другого гравця…", "Connected, waiting for the other player…"], ["Помилка зʼєднання. Спробуй ще раз.", "Connection error. Try again."], ["Онлайн, кожен зі свого комп'ютера", "Online, each on their own computer"], ["Золота хвилина! Смаколики з турбо", "Golden minute! Turbo treats"], ["Стрілки · правий Shift · / мʼячик", "Arrows · right Shift · / ball"], ["Туман! Карта зникла на 10 секунд", "Fog! The map is gone for 10 seconds"], ["W A S D · лівий Shift · Q калюжа", "W A S D · left Shift · Q puddle"], ["Але обіймів він таки отримав:", "But he still got this many hugs:"], ["Другий гравець не на звʼязку.", "The other player is not connected."], ["Здібність: калюжа або м'ячик", "Ability: puddle or ball"], ["наздогнала і обійняла песика", "caught and hugged the dog"], ["разів. Від любові не втечеш.", "times. You can't run from love."], ["Другий гравець відключився.", "The other player disconnected."], ["Чекаємо на другого гравця…", "Waiting for the other player…"], ["Вітер у спину! Усі летять", "Tailwind! Everybody flies"], ["Введи код із пʼяти літер.", "Enter the five-letter code."], ["не знайдено. Перевір код.", "not found. Check the code."], ["Залишилась одна хвилина!", "One minute left!"], ["Смаколики знову золоті!", "The treats are golden again!"], ["Удвох на одному екрані", "Two on one screen"], ["кинути м'ячик (онлайн:", "throw a ball (online:"], ["Песик вийшов у меню.", "The dog went back to the menu."], ["Я сама, за дівчину", "Solo, as the girl"], ["Останні 10 секунд!", "Last 10 seconds!"], ["Створюємо кімнату…", "Creating a room…"], ["). Можна починати!", "). Ready to start!"], ["Чекаємо на песика…", "Waiting for the dog…"], ["Ігрове поле: парк", "Playing field: the park"], ["Від третьої особи", "Third person"], ["Обійми перемогли!", "Hugs win!"], ["Tab: велика карта", "Tab: big map"], ["Я сам, за песика", "Solo, as the dog"], ["Хто ти в онлайні", "Who are you online"], ["Музична скринька", "Music box"], ["знаходить скарб!", "finds the treasure!"], ["Політ на драконі", "Dragon flight"], ["Лабрадор-утікач", "Runaway Labrador"], ["Волосся дівчини", "Girl's hair"], ["Снігова вершина", "Snowy peak"], ["Серце лабіринту", "Heart of the maze"], ["Небесні острови", "Sky islands"], [", новий рекорд!", ", new record!"], ["Кімнату з кодом", "Room with code"], ["Рахуй до трьох:", "Count to three:"], ["Скарб знайдено", "Treasure found"], ["Хмарне царство", "Cloud kingdom"], ["Підключаємося…", "Connecting…"], ["Стебло велетня", "Beanstalk"], ["На весь екран", "Full screen"], ["Здібність (Q)", "Ability (Q)"], ["вирити калюжу", "dig a puddle"], ["зовсім поруч!", "right here!"], ["Чайна пустеля", "Tea desert"], ["ВОНА ДІСТАНЕ!", "SHE CAN REACH!"], ["Ім'я дівчини", "Girl's name"], ["Створити гру", "Create game"], ["правий Shift", "right Shift"], ["дуже холодно", "very cold"], ["Камʼяне коло", "Stone circle"], ["Ой, слизько!", "Oops, slippery!"], ["Зʼєднуємося…", "Connecting…"], ["картина Анни", "will hang here"], ["Пауза (Esc)", "Pause (Esc)"], ["Ім'я песика", "Dog's name"], ["Код кімнати", "Room code"], ["Приєднатися", "Join"], ["лівий Shift", "left Shift"], ["Грибний гай", "Mushroom grove"], ["Не доженеш!", "Can't catch me!"], ["Мій песику!", "My doggy!"], ["На звʼязку:", "Connected:"], ["Без музики", "No music"], ["Почати гру", "Start game"], ["Продовжити", "Resume"], ["МУЗЕЙ АННИ", "ANNA'S MUSEUM"], ["Гав! Лови!", "Woof! Catch me!"], ["Обнімашки!", "Huggies!"], ["+швидкість", "+speed"], [" разів за ", " times in "], ["Я дівчина", "I'm the girl"], ["Каштанове", "Chestnut"], ["повертати", "turn"], ["покликати", "call"], ["Відкрито:", "Discovered:"], ["Іди сюди!", "Come here!"], ["Ану стій!", "Hey, stop!"], ["Летимо-о!", "We're flying!"], [". Реванш?", ". Rematch?"], ["Звук (M)", "Sound (M)"], ["Хто грає", "Who plays"], ["гавкнути", "bark"], ["кісточок", "bones"], ["Ще раунд", "Play again"], ["Гав-гав!", "Woof-woof!"], ["Пружина!", "Boing!"], ["Мʼячик!!", "A ball!!"], ["У ТРУБІ:", "IN PIPE:"], ["У ЛИСТІ:", "IN LEAVES:"], ["ПОВІЛЬНО", "SLOW"], ["Тут буде", "A painting by Anna"], ["Дракон ·", "Dragon ·"], ["Лабіринт", "Maze"], ["Я песик", "I'm the dog"], ["вперед,", "forward,"], ["Дівчина", "Girl"], ["обіймів", "hugs"], ["холодно", "cold"], ["Ба-бах!", "Ka-boom!"], ["Ві-і-і!", "Wheee!"], ["(рекорд", "(record"], ["· Місця", "· Places"], ["Обійми!", "Hug!"], ["гравець", "player"], ["дівчина", "girl"], ["Камера", "Camera"], ["Музика", "Music"], ["Біляве", "Blonde"], ["Русяве", "Light brown"], ["Пробіл", "Space"], ["У меню", "To menu"], ["Скарб:", "Treasure:"], ["гаряче", "hot"], ["Острів", "Island"], ["Ого-о!", "Whoa!"], ["Юху-у!", "Woo-hoo!"], ["Апчхи!", "Achoo!"], ["турбо!", "turbo!"], ["Тікай!", "Run!"], ["Туман:", "Fog:"], ["Кохана", "Sweetheart"], ["Пауза", "Pause"], ["Згори", "Top-down"], ["Техно", "Techno"], ["Раунд", "Round"], ["Чорне", "Black"], ["бігти", "run"], ["назад", "back"], ["ривок", "sprint"], ["тепло", "warm"], ["Музей", "Museum"], ["Скеля", "The crag"], ["Плюх!", "Splash!"], ["утік!", "got away!"], [" очок", " points"], ["Вжух!", "Whoosh!"], ["+сили", "+energy"], ["ТУРБО", "TURBO"], ["песик", "dog"], ["Песик", "Doggy"], ["Площа", "Plaza"], ["Звук", "Sound"], ["2 хв", "2 min"], ["3 хв", "3 min"], ["5 хв", "5 min"], ["Руде", "Red"], ["Гав!", "Woof!"], ["Гоп!", "Hop!"], ["або", "or"], ["КОД", "CODE"], ["час", "time"], ["Дракон", "Dragon"], ["Гірка: можна забігти", "Slide: run up it"], ["Листя: сховайся", "Leaves: hide here"], ["Вітер на скелю", "Wind to the crag"], ["Вітер нагору", "Wind lift"], ["Драбина", "Ladder"], ["Батут", "Trampoline"], ["Пружина", "Spring"], ["Гармата", "Cannon"], ["Нора", "Burrow"], ["Труба", "Pipe"]];
 const TRC=new Map();
 function tr(t){
   if(LANG!=='en'||typeof t!=='string'||!/[\u0400-\u04ff]/.test(t))return t;
@@ -589,6 +597,7 @@ function checkChest(c){
   }
 }
 function chestHint(c){
+  if(hideOn())return'';
   if(chest.found)return'Скарб знайдено';
   const q=chestXY(),d=Math.hypot(c.x-q[0],c.y-q[1]);
   return'Скарб: '+(d>5000?'дуже холодно':d>2600?'холодно':d>1300?'тепло':d>500?'гаряче':'зовсім поруч!');
@@ -598,17 +607,18 @@ function pileAt(x,y){for(const q of piles)if(Math.hypot(x-q.x,y-q.y)<q.r)return 
 let prints=[],lastPrint={x:0,y:0},bigMap=false;
 function tickPrints(dt){
   for(let i=prints.length-1;i>=0;i--){prints[i].t-=dt;if(prints[i].t<=0)prints.splice(i,1);}
-  if(dog.z>0||dog.inWater||dog.pipe||dog.hid||dog.act)return;
+  if(dog.z>0||dog.inWater||dog.pipe||dog.hid||dog.act||hideOn())return;
   if(Math.hypot(dog.x-lastPrint.x,dog.y-lastPrint.y)>44){
     lastPrint={x:dog.x,y:dog.y};const sd=prints.length&1?1:-1;
     prints.push({x:dog.x-Math.sin(dog.ang)*7*sd,y:dog.y+Math.cos(dog.ang)*7*sd,a:dog.ang,t:11});
     if(prints.length>80)prints.shift();
   }
 }
-function dogUnseen(){return dog.hid&&girl.sniffT<=0&&(mode==='girl'||mode==='duo'||(mode==='online'&&myRole==='girl'));}
+function dogUnseen(){return(hideOn()||(dog.hid&&girl.sniffT<=0))&&(mode==='girl'||mode==='duo'||(mode==='online'&&myRole==='girl'));}
 /* the girl's sniff: every 20 seconds she can find the dog for 3 seconds, even in leaves or fog */
 function sniff(){
   if(phase!=='run'||paused||softPause||girl.sniffCd>0||girl.freeze>0)return;
+  if(hideOn()){const d=Math.hypot(dog.x-girl.x,dog.y-girl.y);girl.sniffCd=14;announce(d<350?'Нюх: гаряче!':d<900?'Нюх: тепло':'Нюх: холодно');sfx.call();return;}
   girl.sniffCd=20;girl.sniffT=3;girl.say='Нюх-нюх!';girl.sayT=1.3;girl.sayId++;sfx.call();
 }
 function tickSniff(dt){
@@ -682,6 +692,13 @@ function tickTips(dt){
     if(tipSeen[k]||(q.dog&&c!==dog)||Math.hypot(q.x-c.x,q.y-c.y)>230)continue;
     showTip(k,TIPS[k]);return;
   }
+}
+/* hide and seek ends when a heart hits (1) or the hearts run out (2); online the girl's side reports it and the dog's side ends the round */
+function hideEnd(k){
+  if(phase!=='run')return;
+  if(mode==='online'&&!demo&&myRole==='girl'){net.ht=k;return;}
+  if(k===2)announce('Сердечка скінчились!');
+  finish(k===1?'girl':'dog');
 }
 /* three friendly dragons: walk up to one and it flies you to the next perch */
 const dragons=[{x:5060,y:2580},{x:11800,y:1800},{x:13250,y:8600},{x:18500,y:9000},{x:20420,y:6600}];
@@ -929,11 +946,14 @@ const hugC={x:0,y:0,a:0};
 const net={active:false,kind:'wait',remote:null,lastAt:0,send:null,peer:null,conn:null,room:null,code:'',note:'',seq:0,acc:0,goSeen:-1,lastSi:-1,lastQ:-1,pkKey:''};
 
 let cam3d=true, R3=null, frameDt=0.016;
+let gtype='chase',hsSeek=false;
+const HIDE_T=30,SEEK_T=90,HIDE_SHOTS=6,HIDE_R=1500,PAINTS=[0x6aa857,0x2f7d3b,0x6e4a2a,0xfff3e4,0xf6b9cd,0xe23d4f,0x9c9b95,0x8fd3c8,0xffffff,0xf2c14e];
+const hideOn=()=>gtype==='hide'&&!demo;
 let shake=0,bannerT=0,bannerTxt='',fogT=0,lastEv=0,lastAnn=99;
 function scoreOf(c){return Math.round(c.score+(c===girl?hugs*150:0));}
 function announce(t){bannerTxt=t;bannerT=3.2;}
 
-function makeChar(kind){return{z:0,on:null,act:null,fall:0,drop:0,flyCd:0,score:0,padCd:0,hid:false,hidT:0,sneeze:0,sniffT:0,sniffCd:0,seen:0,riding:false,pipe:null,pipeT:0,camZ:0,sayId:0,head:0,slow:0,turbo:0,abCd:0,tpCd:0,slipSafe:0,ballId:0,ballX:0,ballY:0,kind,x:0,y:0,vx:0,vy:0,ang:0,r:15,stam:100,tired:false,anim:0,moving:false,sprinting:false,inWater:false,boost:0,say:'',sayT:0,freeze:0,safe:0,bot:false,lastAng:0,wander:0,fxT:0,reach:0,happy:false,botSprint:false};}
+function makeChar(kind){return{z:0,on:null,act:null,fall:0,drop:0,flyCd:0,score:0,padCd:0,hid:false,hidT:0,sneeze:0,sniffT:0,sniffCd:0,paint:-1,pose:0,shots:0,hx:0,hy:0,wx:0,wy:0,seen:0,riding:false,pipe:null,pipeT:0,camZ:0,sayId:0,head:0,slow:0,turbo:0,abCd:0,tpCd:0,slipSafe:0,ballId:0,ballX:0,ballY:0,kind,x:0,y:0,vx:0,vy:0,ang:0,r:15,stam:100,tired:false,anim:0,moving:false,sprinting:false,inWater:false,boost:0,say:'',sayT:0,freeze:0,safe:0,bot:false,lastAng:0,wander:0,fxT:0,reach:0,happy:false,botSprint:false};}
 function spawnPickup(kind){
   /* some treats wait on top of the hills */
   if(Math.random()<0.12){
@@ -966,6 +986,13 @@ function reset(){
   joys.dog=joys.girl=null;softPause=false;staleT=0;
   shake=0;bannerT=0;fogT=0;lastEv=0;lastAnn=99;prints=[];bigMap=false;wheel.on=false;
   chest={i:mode==='online'&&!demo?(curRid*7+3)%CHESTS.length:(Math.random()*CHESTS.length)|0,found:0};
+  hsSeek=false;net.ht=0;
+  if(hideOn()){
+    timeLeft=HIDE_T+SEEK_T;girl.freeze=HIDE_T;dog.safe=0;goal=1;pickups=[];girl.shots=HIDE_SHOTS;chest.found=3;
+    const a=Math.random()*TAU,r=500+Math.random()*800;dog.hx=CX+Math.cos(a)*r;dog.hy=CY+Math.sin(a)*r;
+    if(dog.bot){dog.paint=(Math.random()*PAINTS.length)|0;dog.pose=(Math.random()*4)|0;}
+    announce('Ховайся біля площі! Q — колір, E — поза');
+  }
 }
 
 /* ---------- sound ---------- */
@@ -1073,12 +1100,20 @@ function puff(x,y){
   for(let i=0;i<8;i++){const a=Math.random()*TAU,s=30+Math.random()*60;parts.push({k:'dust',x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,life:0.5,max:0.5,s:5+Math.random()*5});}
 }
 function ballPos(b){
+  if(b.heart){const u=Math.min(1,b.t/b.dur);return{x:lerp(b.x0,b.x1,u),y:lerp(b.y0,b.y1,u),h:34};}
   const u=Math.min(1,b.t/b.dur),r=b.t-b.dur;
   return{x:lerp(b.x0,b.x1,u),y:lerp(b.y0,b.y1,u),h:b.landed?Math.abs(Math.sin(r*7))*20*Math.max(0,1-r/1.2):Math.sin(u*Math.PI)*70};
 }
 /* the dog digs a slippery puddle behind him; the girl throws a ball the dog cannot resist */
 function useAbility(c){
   if(phase!=='run'||paused||softPause||c.abCd>0||c.freeze>0)return;
+  if(hideOn()){
+    if(c.kind==='dog'){if(girl.freeze>0){c.paint=c.paint+1>=PAINTS.length?-1:c.paint+1;sfx.tick();}return;}
+    if(c.shots<=0)return;
+    const a=(cam3d&&R3&&!c.bot)?c.head:c.ang,tx=clamp(c.x+Math.cos(a)*950,20,WW-20),ty=clamp(c.y+Math.sin(a)*950,20,WH-20);
+    c.shots--;c.ballId++;c.ballX=tx;c.ballY=ty;
+    balls.push({x0:c.x,y0:c.y,x1:tx,y1:ty,t:0,dur:0.9,landed:false,heart:true});c.abCd=0.7;sfx.heart();return;
+  }
   if(c.kind==='dog'){
     if(c.on||c.act||c.z>0)return;
     puddles.push({x:c.x-Math.cos(c.ang)*34,y:c.y-Math.sin(c.ang)*34,life:18});
@@ -1112,6 +1147,11 @@ addEventListener('keydown',e=>{
   if(phase==='end'||paused||softPause)return;
   if(GAMEKEYS.has(e.code))e.preventDefault();
   if(e.repeat||phase!=='run')return;
+  if(e.code==='KeyE'&&hideOn()){
+    const c=mode==='online'?(myRole==='dog'?dog:null):(mode==='girl'?null:dog);
+    if(c&&girl.freeze>0){c.pose=(c.pose+1)%4;sfx.tick();}
+    return;
+  }
   if(e.code==='Space'||e.code==='KeyE')speak(mode==='online'?mine():mode==='girl'?girl:dog);
   if(e.code==='Enter')speak(mode==='online'?mine():mode==='dog'?dog:girl);
   if((e.code==='KeyR'&&(mode==='girl'||(mode==='online'&&myRole==='girl')))||(e.code==='Comma'&&mode==='duo')){sniff();return;}
@@ -1194,6 +1234,12 @@ function steer(c,want,isDog){
   c.lastAng=best;return best;
 }
 function girlBot(){
+  if(hideOn()){
+    if(!girl.wx||Math.hypot(girl.wx-girl.x,girl.wy-girl.y)<70||Math.random()<0.004){const a=Math.random()*TAU,r=Math.random()*1350;girl.wx=CX+Math.cos(a)*r;girl.wy=CY+Math.sin(a)*r;}
+    const dd=Math.hypot(dog.x-girl.x,dog.y-girl.y);
+    if(dd<240&&girl.abCd<=0&&girl.freeze<=0&&Math.abs(dog.z-girl.z)<80){girl.ang=girl.head=Math.atan2(dog.y-girl.y,dog.x-girl.x);useAbility(girl);}
+    const a=steer(girl,Math.atan2(girl.wy-girl.y,girl.wx-girl.x),false);return{x:Math.cos(a)*0.8,y:Math.sin(a)*0.8,sprint:false};
+  }
   let tx=dog.x+dog.vx*0.25,ty=dog.y+dog.vy*0.25;const d=Math.hypot(dog.x-girl.x,dog.y-girl.y);
   /* the dog is up on a hill: head for its nearest ladder and climb */
   const hill=dog.on||(dog.act&&dog.act.k==='climb'?dog.act.p:null);
@@ -1213,6 +1259,11 @@ function girlBot(){
   return{x:Math.cos(a),y:Math.sin(a),sprint:girl.botSprint};
 }
 function dogBot(dt){
+  if(hideOn()){
+    const dx=dog.hx-dog.x,dy=dog.hy-dog.y,dd=Math.hypot(dx,dy);
+    if(dd<40||girl.freeze<=0||girl.freeze<4)return ZERO;
+    const a=steer(dog,Math.atan2(dy,dx),true);return{x:Math.cos(a),y:Math.sin(a),sprint:true};
+  }
   const dx=dog.x-girl.x,dy=dog.y-girl.y,d=Math.hypot(dx,dy)||1;
   const fear=clamp(1-(d-170)/620,0,1);
   let fx=dx/d*fear*2.2,fy=dy/d*fear*2.2;
@@ -1346,9 +1397,9 @@ function heights(c,isDog,dt){
         c.drop=0;
       }
     }
-    else if(c.padCd<=0&&cannonAt(c))startShot(c,cannonAt(c));
+    else if(c.padCd<=0&&cannonAt(c)&&(!hideOn()||cannonAt(c).spr))startShot(c,cannonAt(c));
     else if(c.padCd<=0&&padAt(c))startHop(c);
-    else if(c.flyCd<=0&&dragonAt(c)>=0)startFly(c,dragonAt(c));
+    else if(c.flyCd<=0&&!hideOn()&&dragonAt(c)>=0)startFly(c,dragonAt(c));
     else if(Math.hypot(c.x-UP.x,c.y-UP.y)<UP.r)startLift(c);
     else if(liftAt(c))startLift(c,liftAt(c));
     else if(slideUpAt(c))startUp(c,slideUpAt(c));
@@ -1379,6 +1430,7 @@ function stepChar(c,inp,dt){
     c.stam=Math.min(100,c.stam+8*dt);c.inWater=false;
     stepAct(c,dt);return;
   }
+  if(hideOn()&&isDog&&girl.freeze<=0)inp=ZERO;
   let ix=inp.x,iy=inp.y,mag=Math.hypot(ix,iy);
   if(mag>1){ix/=mag;iy/=mag;mag=1;}
   const moving=mag>0.05;
@@ -1405,6 +1457,7 @@ function stepChar(c,inp,dt){
   c.vx+=(tvx-c.vx)*k;c.vy+=(tvy-c.vy)*k;
   c.x+=c.vx*dt;c.y+=c.vy*dt;
   resolve(c,isDog);
+  if(hideOn()){const dx=c.x-CX,dy=c.y-CY,d=Math.hypot(dx,dy),R=HIDE_R+(isDog?0:260);if(d>R){c.x=CX+dx/d*R;c.y=CY+dy/d*R;}}
   heights(c,isDog,dt);
   const v=Math.hypot(c.vx,c.vy);
   c.moving=v>22;
@@ -1430,7 +1483,10 @@ function finish(w){
   sfx.win();
   const el=mins*60-timeLeft,mm=Math.floor(el/60),ss=Math.floor(el%60);
   $('stHugs').textContent=hugs;$('stBones').textContent=bonesGot;$('stTime').textContent=mm+':'+(ss<10?'0':'')+ss;
-  if(w==='girl'){
+  if(gtype==='hide'){
+    $('endTitle').textContent=w==='girl'?'Знайшла!':'Не знайшла!';
+    $('endText').textContent=w==='girl'?names.girl+' влучила сердечком у песика.':names.dog+' так добре сховався, що його не знайшли.';
+  }else if(w==='girl'){
     $('endTitle').textContent='Обійми перемогли!';
     $('endText').textContent=names.girl+' наздогнала і обійняла песика '+goal+' разів. Від любові не втечеш.';
   }else{
@@ -1440,7 +1496,7 @@ function finish(w){
   {
     const who=mode==='duo'?[dog,girl]:[mode==='online'?mine():(mode==='dog'?dog:girl)];let best={},txt='';
     try{best=JSON.parse(localStorage.getItem('labrador-best')||'{}')||{};}catch(e){}
-    for(const c of who){const sc=scoreOf(c),k=c.kind,rec=sc>(best[k]||0);if(rec)best[k]=sc;txt+=' '+(c===dog?names.dog:names.girl)+': '+sc+' очок'+(rec?', новий рекорд!':' (рекорд '+best[k]+').');}
+    for(const c of who){const sc=scoreOf(c),k=c.kind,rec=sc>(best[k]||0);if(rec)best[k]=sc;txt+=' '+(c===dog?names.dog:names.girl)+': '+sc+' очок'+(rec?', новий рекорд!':' (рекорд '+(best[k]||0)+').');}
     try{localStorage.setItem('labrador-best',JSON.stringify(best));}catch(e){}
     $('endText').textContent+=txt;
   }
@@ -1453,6 +1509,10 @@ function tickEvents(dt){
   if(fogT>0)fogT-=dt;
   if(shake>0)shake=Math.max(0,shake-dt*1.7);
   if(demo||phase!=='run')return;
+  if(gtype==='hide'){
+    if(!hsSeek&&girl.freeze<=0){hsSeek=true;const meDog=mode==='dog'||(mode==='online'&&myRole==='dog');announce(meDog?'Замри! Вона шукає':'Шукай песика! Q — постріл сердечком');sfx.go();}
+    return;
+  }
   const el=mins*60-timeLeft,ev=Math.floor(el/32),online=mode==='online';
   const own=c=>!online||c===mine();
   if(ev>=1&&ev!==lastEv){
@@ -1489,7 +1549,7 @@ function update(dt){
   reachUpdate(dt);
   collectPickups(true,true);
   worldStuff(dt,true,true);
-  tryHug(15);
+  if(gtype!=='hide'||demo)tryHug(15);
 }
 function worldStuff(dt,simDog,simGirl){
   if(simDog&&dog.tpCd<=0&&!dog.act&&!dog.on&&dog.z<=0){
@@ -1514,6 +1574,11 @@ function worldStuff(dt,simDog,simGirl){
   }
   for(let i=balls.length-1;i>=0;i--){
     const b=balls[i];b.t+=dt;
+    if(b.heart){
+      if(!b.landed&&simGirl){const q=ballPos(b);if(Math.hypot(q.x-dog.x,q.y-dog.y)<50&&Math.abs(dog.z-girl.z)<80){b.landed=true;burst(dog.x,dog.y,22);firework(dog.x,dog.y,dog.z+200);hideEnd(1);}}
+      if(b.t>=b.dur){if(!b.landed)puff(b.x1,b.y1);balls.splice(i,1);}
+      continue;
+    }
     if(!b.landed&&b.t>=b.dur){
       b.landed=true;puff(b.x1,b.y1);
       if(simDog&&dog.safe<=0&&Math.hypot(dog.x-b.x1,dog.y-b.y1)<150){
@@ -1522,6 +1587,8 @@ function worldStuff(dt,simDog,simGirl){
     }
     if(b.t>b.dur+3)balls.splice(i,1);
   }
+  if(hideOn()&&simGirl&&phase==='run'&&girl.freeze<=0&&girl.shots<=0&&!balls.length)hideEnd(2);
+  if(hideOn())return;
   const d=Math.hypot(dog.x-girl.x,dog.y-girl.y);
   if(girl.bot&&girl.abCd<=0&&girl.freeze<=0&&d<380&&d>90)useAbility(girl);
   if(dog.bot&&dog.abCd<=0&&d<210)useAbility(dog);
@@ -1538,13 +1605,13 @@ function updateOnline(dt){
   reachUpdate(dt);
   collectPickups(iAmDog,!iAmDog);
   worldStuff(dt,iAmDog,!iAmDog);
-  if(iAmDog&&!netStale)tryHug(22);
+  if(iAmDog&&!netStale&&gtype!=='hide')tryHug(22);
 }
 function moveRemote(c,rs,dt){
   const age=Math.min(0.25,(performance.now()-net.lastAt)/1000);
   const tx=rs.x+rs.vx*age,ty=rs.y+rs.vy*age,k=1-Math.exp(-16*dt);
   if(Math.hypot(tx-c.x,ty-c.y)>420){puff(c.x,c.y);c.x=tx;c.y=ty;puff(tx,ty);}else{c.x+=(tx-c.x)*k;c.y+=(ty-c.y)*k;}
-  c.vx=rs.vx;c.vy=rs.vy;c.ang+=angDiff(c.ang,rs.a)*k;c.turbo=(rs.f&16)?0.2:0;c.riding=!!(rs.f&32);if(c.kind==='dog')c.hid=!!(rs.f&64);c.score=rs.sc;
+  c.vx=rs.vx;c.vy=rs.vy;c.ang+=angDiff(c.ang,rs.a)*k;c.turbo=(rs.f&16)?0.2:0;c.riding=!!(rs.f&32);if(c.kind==='dog'){c.hid=!!(rs.f&64);c.paint=rs.pc;c.pose=rs.po;}else c.shots=rs.sh;c.score=rs.sc;
   if((rs.ch===1||rs.ch===2)&&!chest.found&&!demo){chest.found=rs.ch;chestFx();}
   c.moving=!!(rs.f&1);c.sprinting=!!(rs.f&2);c.tired=!!(rs.f&4);c.stam=rs.st;c.inWater=inPond(c.x,c.y);
   c.z+=((rs.z>=0?rs.z:groundZ(c.x,c.y))-c.z)*(1-Math.exp(-14*dt));c.pipe=c.kind==='dog'?pipeAt(c.x,c.y):null;
@@ -1616,7 +1683,7 @@ function netReceive(o){
   if(!o||typeof o!=='object'||(o.r!=='dog'&&o.r!=='girl'))return;
   const s={r:o.r,n:String(o.n==null?'':o.n).slice(0,14),x:clamp(num(o.x,CX),0,WW),y:clamp(num(o.y,CY),0,WH),a:num(o.a,0),z:clamp(num(o.z,-1),-1,2000),sc:clamp(num(o.sc,0),0,1e6),
     vx:clamp(num(o.vx,0),-600,600),vy:clamp(num(o.vy,0),-600,600),f:num(o.f,0)|0,st:clamp(num(o.st,100),0,100),
-    ch:num(o.ch,0)|0,sy:String(o.sy==null?'':o.sy).slice(0,24),si:num(o.si,0),go:num(o.go,0),cr:num(o.cr,0),
+    ch:num(o.ch,0)|0,pc:clamp(num(o.pc,-1),-1,20)|0,po:clamp(num(o.po,0),0,3)|0,sh:clamp(num(o.sh,0),0,20)|0,ht:clamp(num(o.ht,0),0,2)|0,sy:String(o.sy==null?'':o.sy).slice(0,24),si:num(o.si,0),go:num(o.go,0),cr:num(o.cr,0),
     h:typeof o.h==='string'&&/^#[0-9a-f]{6}$/i.test(o.h)?o.h:null,pk:[],g:null};
   if(Array.isArray(o.pk))for(let i=0;i<o.pk.length&&i<210;i++)s.pk.push(clamp(num(o.pk[i],0),0,WW));
   s.bi=num(o.bi,0);s.bx=clamp(num(o.bx,CX),0,WW);s.by=clamp(num(o.by,CY),0,WH);s.pd=[];
@@ -1624,8 +1691,8 @@ function netReceive(o){
   if(o.g&&typeof o.g==='object'){
     const g=o.g;
     s.g={ph:['lobby','run','hug','end'].indexOf(g.ph)>=0?g.ph:'lobby',rid:num(g.rid,0),t:clamp(num(g.t,0),0,600),
-      hg:clamp(num(g.hg,0),0,99)|0,gl:clamp(num(g.gl,5),1,99)|0,mn:clamp(num(g.mn,2),1,3)|0,
-      fz:clamp(num(g.fz,0),0,5),sf:clamp(num(g.sf,0),0,5),hx:num(g.hx,0),hy:num(g.hy,0),ha:num(g.ha,0),
+      hg:clamp(num(g.hg,0),0,99)|0,gl:clamp(num(g.gl,5),1,99)|0,mn:clamp(num(g.mn,2),1,9)|0,gt:num(g.gt,0)?1:0,
+      fz:clamp(num(g.fz,0),0,60),sf:clamp(num(g.sf,0),0,5),hx:num(g.hx,0),hy:num(g.hy,0),ha:num(g.ha,0),
       w:g.w==='girl'?'girl':'dog',bn:clamp(num(g.bn,0),0,999)|0};
   }
   net.remote=s;net.lastAt=performance.now();
@@ -1635,9 +1702,9 @@ function buildState(){
   if(!demo)for(const p of pickups)if(p.kind===kind)pk.push(Math.round(p.x),Math.round(p.y),p.sup?1:0);
   const s={q:net.seq++,r:myRole,n:names[myRole],x:Math.round(me.x*10)/10,y:Math.round(me.y*10)/10,a:Math.round(me.ang*100)/100,z:Math.round(me.z),sc:Math.round(me.score),
     vx:Math.round(me.vx),vy:Math.round(me.vy),f:(me.moving?1:0)|(me.sprinting?2:0)|(me.tired?4:0)|(me.slow>0?8:0)|(me.turbo>0?16:0)|(me.act&&me.act.k==='fly'?32:0)|(me.hid?64:0),st:Math.round(me.stam),
-    ch:chest.found,sy:me.say,si:me.sayId,go:goCount,cr:demo?0:curRid,pk};
+    ch:chest.found,pc:me.paint,po:me.pose,sh:me.shots,ht:myRole==='girl'?(net.ht||0):0,sy:me.say,si:me.sayId,go:goCount,cr:demo?0:curRid,pk};
   if(myRole==='girl')s.h=hair;
-  else s.g={ph:demo?'lobby':phase,rid,t:Math.round(timeLeft*10)/10,hg:hugs,gl:goal,mn:mins,
+  else s.g={ph:demo?'lobby':phase,rid,t:Math.round(timeLeft*10)/10,hg:hugs,gl:goal,mn:mins,gt:gtype==='hide'?1:0,
     fz:Math.round(Math.max(0,girl.freeze)*100)/100,sf:Math.round(Math.max(0,dog.safe)*100)/100,
     hx:Math.round(hugC.x),hy:Math.round(hugC.y),ha:Math.round(hugC.a*100)/100,w:winner==='girl'?'girl':'dog',bn:bonesGot};
   if(myRole==='girl'){s.bi=me.ballId;s.bx=Math.round(me.ballX);s.by=Math.round(me.ballY);}
@@ -1659,7 +1726,7 @@ function applyRemotePickups(kind,flat){
   for(let i=0;i+2<flat.length;i+=3)pickups.push({x:flat[i],y:flat[i+1],kind,ph:i,sup:flat[i+2]>0});
 }
 function applyAuth(g){
-  mins=g.mn;goal=g.gl;
+  mins=g.mn;goal=g.gl;if(demo||g.rid!==curRid)gtype=g.gt?'hide':'chase';
   if(g.rid!==curRid){if((g.ph==='run'||g.ph==='hug')&&g.rid)beginOnline(g.rid);return;}
   if(demo)return;
   if(g.ph==='lobby'){toMenu();net.note='Песик вийшов у меню.';return;}
@@ -1691,8 +1758,9 @@ function netTick(dt){
     if(!demo&&remoteInRound()){
       applyRemotePickups(rs.r==='dog'?'bone':'heart',rs.pk);
       if(rs.r==='girl'){
+        if(gtype==='hide'&&rs.ht&&phase==='run'){if(rs.ht===1){burst(dog.x,dog.y,22);firework(dog.x,dog.y,dog.z+200);}finish(rs.ht===1?'girl':'dog');}
         if(rs.bi!==net.lastBall){
-          if(net.lastBall>=0&&rs.bi>net.lastBall)balls.push({x0:girl.x,y0:girl.y,x1:rs.bx,y1:rs.by,t:0,dur:0.55,landed:false});
+          if(net.lastBall>=0&&rs.bi>net.lastBall)balls.push({x0:girl.x,y0:girl.y,x1:rs.bx,y1:rs.by,t:0,dur:gtype==='hide'?0.9:0.55,landed:false,heart:gtype==='hide'});
           net.lastBall=rs.bi;
         }
       }else{
@@ -2184,7 +2252,8 @@ function drawWorld(c,x0,y0,x1,y1,who){
     c.strokeStyle='rgba(255,255,255,'+(0.45+Math.sin(T*10)*0.25).toFixed(3)+')';c.lineWidth=3;c.setLineDash([8,8]);
     c.beginPath();c.arc(dog.x,dog.y,34,0,TAU);c.stroke();c.setLineDash([]);
   }
-  if(girl.y<dog.y){drawGirl(c,girl);drawDog(c,dog);}else{drawDog(c,dog);drawGirl(c,girl);}
+  const dDog=()=>{if(hideOn()&&dog.paint>=0){c.fillStyle=hex(PAINTS[dog.paint]);c.save();c.translate(dog.x,dog.y);c.rotate(dog.ang);ell(c,0,0,dog.pose===2?24:20,dog.pose===3?9:12);circ(c,16,0,9);c.restore();}else drawDog(c,dog);};
+  if(girl.y<dog.y){drawGirl(c,girl);dDog();}else{dDog();drawGirl(c,girl);}
   for(const b of balls){
     const q=ballPos(b);
     c.fillStyle='rgba(0,0,0,.2)';ell(c,q.x,q.y+6,7,3.5);
@@ -2304,6 +2373,12 @@ function drawPlate(c,v){
   c.strokeStyle='#4a2a12';c.lineWidth=2;c.beginPath();c.arc(ax,ay,10.5,0,TAU);c.stroke();
   c.fillStyle='#3a2413';c.font='800 11px '+BODYF;c.textAlign='center';c.textBaseline='middle';
   c.fillText(mode==='duo'&&!isDog?'/':'Q',ax,ay+1);
+  if(hideOn()&&phase==='run'){
+    const txt=isDog?(girl.freeze>0?'Q: колір · E: поза':'Замри! Вона шукає'):'Сердечок: '+who.shots+' · Q: постріл';
+    c.font='800 12px '+BODYF;const tw=c.measureText(txt).width+18+(isDog?26:0),hx=v.x>0?px+pw-tw:px;
+    c.fillStyle='rgba(58,36,19,.82)';rrect(c,hx,py+ph+32,tw,22,11);c.fill();c.fillStyle='#fff';c.textAlign='left';c.fillText(txt,hx+9,py+ph+44);
+    if(isDog){c.fillStyle=who.paint<0?'#7a4826':hex(PAINTS[who.paint]);circ(c,hx+tw-15,py+ph+43,7.5);c.strokeStyle='#fff';c.lineWidth=2;c.beginPath();c.arc(hx+tw-15,py+ph+43,7.5,0,TAU);c.stroke();}
+  }
   if(isDog&&who.hid&&phase==='run'){
     const txt='У ЛИСТІ: '+Math.ceil(8-who.hidT);
     c.font='800 12px '+BODYF;const tw=c.measureText(txt).width+18,hx=v.x>0?px+pw-tw:px;
@@ -2352,8 +2427,8 @@ function drawBanner(c,v){
   }else if(phase==='run'&&girl.freeze>0){
     const n=Math.ceil(girl.freeze);
     c.font='700 '+(fs*0.7)+'px '+DISPLAY;
-    if(v.who===dog)outlined(c,'Тікай! '+n,cx,cy,'#7a4826','#fff',fs*0.16);
-    else outlined(c,'Рахуй до трьох: '+n,cx,cy,'#d5477a','#fff',fs*0.16);
+    if(v.who===dog)outlined(c,(hideOn()?'Ховайся! ':'Тікай! ')+n,cx,cy,'#7a4826','#fff',fs*0.16);
+    else outlined(c,(hideOn()?'Не підглядай! ':'Рахуй до трьох: ')+n,cx,cy,'#d5477a','#fff',fs*0.16);
   }
 }
 function drawJoy(c,j){
@@ -2410,6 +2485,7 @@ function drawMap(c){
   };
   mk(x+girl.x*s,y+girl.y*s,'#ff4f86',true);
   if(!dogUnseen())mk(x+dog.x*s,y+dog.y*s,'#7a4826',false);
+  if(hideOn()){c.strokeStyle='rgba(255,255,255,.8)';c.lineWidth=1.5;c.setLineDash([4,4]);c.beginPath();c.arc(x+CX*s,y+CY*s,HIDE_R*s,0,TAU);c.stroke();c.setLineDash([]);}
   if(big){
     c.font='800 12px '+BODYF;c.textAlign='center';c.textBaseline='middle';
     const lab=[['Площа',CX,CY],['Скеля',CRAG.x,CRAG.y],['Лабіринт',MAZE.x+600,MAZE.y+600],['Музей',MUSEUM.x+1300,MUSEUM.y+1300],['Стебло велетня',4050,4430],['Чайна пустеля',DESERT.x,DESERT.y],['Камʼяне коло',RUIN.x,RUIN.y],['Грибний гай',2100,8700],['Снігова вершина',11800,1800],['Небесні острови',17300,5700],['Небесні острови',7400,12100]];
@@ -2435,7 +2511,8 @@ function render(){
     ctx.save();ctx.beginPath();ctx.rect(v.x,v.y,v.w,v.h);ctx.clip();
     const ind=use3?drawIndicator3D:drawIndicator;
     if(v.who===girl&&girl.sniffT>0)ind(ctx,v,dog,'#7a4826',false);
-    else if(fogT<=0){if(v.who===dog)ind(ctx,v,girl,'#ff4f86',true);else if(!dog.hid)ind(ctx,v,dog,'#7a4826',false);}
+    else if(fogT<=0){if(v.who===dog)ind(ctx,v,girl,'#ff4f86',true);else if(!dog.hid&&!hideOn())ind(ctx,v,dog,'#7a4826',false);}
+    if(hideOn()&&v.who===girl&&girl.freeze>0&&phase==='run'){ctx.fillStyle='#2b1a2e';ctx.fillRect(v.x,v.y,v.w,v.h);}
     {
       /* speed streaks while flying, sliding or on turbo */
       const w=v.who,fast=w.turbo>0||(w.act&&w.act.k!=='climb');
@@ -2936,6 +3013,7 @@ function init3D(){
     const tail=new T3.Group();tail.position.set(-22,24,0);
     const tl=P(cyl,D,-8,4,0,2.6,19,2.6);tl.rotation.z=Math.PI/2-0.45;tail.add(tl);dogG.add(tail);
     add(dogG);
+    const dogMats=[];dogG.traverse(o=>{if(o.isMesh){o.material=o.material.clone();dogMats.push({m:o.material,base:o.material.color.getHex()});}});
 
     /* the girl */
     const SK=0xf6cfae,girlG=new T3.Group(),girlLegs=[],girlArms=[];
@@ -3100,7 +3178,7 @@ function init3D(){
     }
     const cams=[new T3.PerspectiveCamera(60,1,5,31000),new T3.PerspectiveCamera(60,1,5,31000)];
     R3={T3,renderer,scene,cams,dogG,dogLegs,dogHead,tail,tongue,girlG,girlLegs,girlArms,hairMat,hairNow:hair,dogSh,girlSh,bonePool,heartPool,drops,tmp:new T3.Vector3(),demoHead:0};
-    R3.sausPool=sausPool;R3.goldPool=goldPool;R3.pudPool=pudPool;R3.ballPool=ballPool;R3.pipeMeshes=pipeMeshes;R3.skyG=skyG;R3.flies=flies;R3.falls=falls;R3.wind=wind;R3.crit=crit;R3.wings=wings;R3.hemi=hemi;R3.sun=sun;R3.beamPool=beamPool;R3.wind2=wind2;R3.pawM=pawM;R3.hlMat=hlMat;R3.gemM=gemM;R3.chestG=chestG;R3.balloons=balloons;R3.drg=drg;R3.dnc={t:new T3.Color(),fogD:new T3.Color(0xffdcea),fogS:new T3.Color(0xffb48a),fogN:new T3.Color(0x2b3166),skyD:new T3.Color(0xffffff),skyS:new T3.Color(0xffb09a),skyN:new T3.Color(0x3a3f86),sunD:new T3.Color(0xfff1d6),sunS:new T3.Color(0xff9a4a)};R3.cm={M:new T3.Matrix4(),Q:new T3.Quaternion(),V:new T3.Vector3(),S:new T3.Vector3(),E:new T3.Euler()};
+    R3.sausPool=sausPool;R3.goldPool=goldPool;R3.pudPool=pudPool;R3.ballPool=ballPool;R3.pipeMeshes=pipeMeshes;R3.skyG=skyG;R3.flies=flies;R3.falls=falls;R3.wind=wind;R3.crit=crit;R3.wings=wings;R3.hemi=hemi;R3.sun=sun;R3.beamPool=beamPool;R3.wind2=wind2;R3.pawM=pawM;R3.hlMat=hlMat;R3.gemM=gemM;R3.dogMats=dogMats;R3.paintNow=-2;R3.chestG=chestG;R3.balloons=balloons;R3.drg=drg;R3.dnc={t:new T3.Color(),fogD:new T3.Color(0xffdcea),fogS:new T3.Color(0xffb48a),fogN:new T3.Color(0x2b3166),skyD:new T3.Color(0xffffff),skyS:new T3.Color(0xffb09a),skyN:new T3.Color(0x3a3f86),sunD:new T3.Color(0xfff1d6),sunS:new T3.Color(0xff9a4a)};R3.cm={M:new T3.Matrix4(),Q:new T3.Quaternion(),V:new T3.Vector3(),S:new T3.Vector3(),E:new T3.Euler()};
     return true;
   }catch(e){R3=null;return false;}
 }
@@ -3111,6 +3189,14 @@ function sync3D(){
   R.dogG.position.set(d.x,(d.hid?-17:0)+TH(d.x,d.y)+d.z+(d.inWater?-12:0)+(d.happy?Math.abs(Math.sin(T*14))*6:0),d.y);
   R.dogG.rotation.y=-d.ang;
   R.dogG.rotation.z=d.act?(d.act.k==='climb'&&d.z>0&&d.z<d.act.h?1.05:d.act.k==='slide'?-0.3:0):0;
+  {
+    const pn=hideOn()?d.paint:-1;
+    if(R.paintNow!==pn){R.paintNow=pn;for(const q of R.dogMats){q.m.color.setHex(q.base);if(pn>=0){const k=0.8+0.25*(((q.base>>16)&255)+((q.base>>8)&255)+(q.base&255))/765;q.m.color.setHex(PAINTS[pn]).multiplyScalar(k);}}}
+    const po=hideOn()&&!d.act?d.pose|0:0;
+    R.dogG.scale.set(1,po===2?0.5:1,1);
+    if(po===1)R.dogG.rotation.z=0.55;else if(po===3){R.dogG.rotation.z=1.25;R.dogG.position.y+=14;}
+    R.ballPool[0].material.color.setHex(gtype==='hide'?0xff4f86:0xd7f04a);
+  }
   {const dp=pipeAt(d.x,d.y);for(const q of R.pipeMeshes){const o=q.p===dp?0.36:1;if(q.mat.opacity!==o){q.mat.opacity=o;q.mat.depthWrite=o===1;}}}
   R.dogLegs[0].rotation.z=run*0.65;R.dogLegs[1].rotation.z=-run*0.65;R.dogLegs[2].rotation.z=-run*0.65;R.dogLegs[3].rotation.z=run*0.65;
   R.tail.rotation.y=Math.sin(T*(d.happy?24:9))*(d.happy?0.9:0.45);
@@ -3292,6 +3378,7 @@ function readForm(){
   names.dog=($('nameDog').value||'').trim()||'Песик';
   names.girl=($('nameGirl').value||'').trim()||'Кохана';
   mode=radio('mode')||'duo';mins=parseInt(radio('mins'),10)||3;hair=radio('hair')||hair;
+  gtype=radio('gtype')==='hide'?'hide':'chase';
   cam3d=radio('cam')!=='top'&&!!R3;
   if(musStyle!==(radio('mus')||'techno')){musStyle=radio('mus')||'techno';MUS.step=0;MUS.next=0;}
   $('gl').hidden=!cam3d;
@@ -3301,14 +3388,15 @@ function readForm(){
   const on=mode==='online';
   if(net.active&&!on&&net.room){try{net.room.presence({s:null}).catch(()=>{});}catch(e){}}
   net.active=on;
-  $('rules').textContent='Дівчина перемагає, якщо обійме песика '+(mins+2)+' разів за '+mins+' хв. Песик перемагає, якщо час спливе раніше. Кісточки повертають песику сили, сердечка дають дівчині силу і швидкість. Песик пролазить крізь кущі та добре плаває, а після кожних обіймів дівчина рахує до трьох. Пригоди: песик риє слизькі калюжі та пірнає в нори, які виносять його в інший кінець парку. Дівчина кидає мʼячик, перед яким песик не може встояти. Сосиска і золоте серце дають турбо. Світ величезний: на сході й півдні є засніжені гори, на які можна вибігти, лабіринт із живоплоту, чайна пустеля, грибний гай, велике озеро і камʼяне коло. Через увесь край тече річка: песик її перепливає, дівчина бреде повільно або шукає місток. За все нараховуються очки, найкращий результат запамʼятовується. Кожні пів хвилини щось стається: смаколики стають золотими, карту ховає туман або всіх підганяє вітер. Золотий промінь показує турбо-смаколик здалеку. Червоні гриби-батути перекидають через живопліт і річку. Щораунду десь захований скарб: підказка «холодно/гаряче» біля імені, знахідка дає 300 очок і довге турбо. Над хмарами є ще вищий рівень, хмарне царство: туди веде стебло велетня біля центральної площі. На пагорб можна забігти просто гіркою, або піднятися вітровою спіраллю. Сині пружини підкидають на острови й хмари над ними. На далекому сході стоїть Музей Анни: палац із трьома галереями довкола двору зі скляною пірамідою, на стінах висять її картини. Туди веде доріжка і пʼятий дракон. Є верхній рівень: небесні острови з містками. Нагору несе вітрова спіраль під островами або гармата, вниз можна зʼїхати довгою гіркою чи просто стрибнути. Гармати стріляють тобою через пів карти. Чотири дракони катають між площею, сніговою вершиною і камʼяним колом: просто підійди до дракона. Раунд починається вдень і закінчується під зорями. Відкривай нові місця: перше відвідування дає турбо. Клацни по грі, щоб повертати камеру мишкою (Esc відпускає мишку). Біля великого озера стоїть скеля: вітрова спіраль біля її підніжжя піднімає на вершину, а звідти можна стрибнути у воду. Парк величезний: у бетонні труби влазить лише песик (але ховатися там можна 4 секунди, потім дівчина дістане), на пагорби й вежі ведуть драбини (дівчина лазить швидше), а з гірки зʼїжджаєш із турбо.';
+  if(gtype==='hide')$('rules').textContent='Хованки: песик 30 секунд ховається біля площі, обирає позу (E) і колір (Q) і завмирає. Потім дівчина шукає його і стріляє сердечками (Q). Шість сердечок і півтори хвилини.';
+  else $('rules').textContent='Дівчина перемагає, якщо обійме песика '+(mins+2)+' разів за '+mins+' хв. Песик перемагає, якщо час спливе раніше. Кісточки повертають песику сили, сердечка дають дівчині силу і швидкість. Песик пролазить крізь кущі та добре плаває, а після кожних обіймів дівчина рахує до трьох. Пригоди: песик риє слизькі калюжі та пірнає в нори, які виносять його в інший кінець парку. Дівчина кидає мʼячик, перед яким песик не може встояти. Сосиска і золоте серце дають турбо. Світ величезний: на сході й півдні є засніжені гори, на які можна вибігти, лабіринт із живоплоту, чайна пустеля, грибний гай, велике озеро і камʼяне коло. Через увесь край тече річка: песик її перепливає, дівчина бреде повільно або шукає місток. За все нараховуються очки, найкращий результат запамʼятовується. Кожні пів хвилини щось стається: смаколики стають золотими, карту ховає туман або всіх підганяє вітер. Золотий промінь показує турбо-смаколик здалеку. Червоні гриби-батути перекидають через живопліт і річку. Щораунду десь захований скарб: підказка «холодно/гаряче» біля імені, знахідка дає 300 очок і довге турбо. Над хмарами є ще вищий рівень, хмарне царство: туди веде стебло велетня біля центральної площі. На пагорб можна забігти просто гіркою, або піднятися вітровою спіраллю. Сині пружини підкидають на острови й хмари над ними. На далекому сході стоїть Музей Анни: палац із трьома галереями довкола двору зі скляною пірамідою, на стінах висять її картини. Туди веде доріжка і пʼятий дракон. Є верхній рівень: небесні острови з містками. Нагору несе вітрова спіраль під островами або гармата, вниз можна зʼїхати довгою гіркою чи просто стрибнути. Гармати стріляють тобою через пів карти. Чотири дракони катають між площею, сніговою вершиною і камʼяним колом: просто підійди до дракона. Раунд починається вдень і закінчується під зорями. Відкривай нові місця: перше відвідування дає турбо. Клацни по грі, щоб повертати камеру мишкою (Esc відпускає мишку). Біля великого озера стоїть скеля: вітрова спіраль біля її підніжжя піднімає на вершину, а звідти можна стрибнути у воду. Парк величезний: у бетонні труби влазить лише песик (але ховатися там можна 4 секунди, потім дівчина дістане), на пагорби й вежі ведуть драбини (дівчина лазить швидше), а з гірки зʼїжджаєш із турбо.';
 }
-function save(){try{localStorage.setItem('labrador-utikach',JSON.stringify({d:$('nameDog').value,g:$('nameGirl').value,mode,role:myRole,mins,hair:radio('hair'),cam:radio('cam'),mus:radio('mus'),muted}));}catch(e){}}
+function save(){try{localStorage.setItem('labrador-utikach',JSON.stringify({d:$('nameDog').value,g:$('nameGirl').value,mode,role:myRole,mins,hair:radio('hair'),cam:radio('cam'),mus:radio('mus'),gt:radio('gtype'),muted}));}catch(e){}}
 function load(){
   try{
     const s=JSON.parse(localStorage.getItem('labrador-utikach')||'null');if(!s)return;
     if(s.d)$('nameDog').value=s.d;if(s.g)$('nameGirl').value=s.g;
-    if(s.mode)setRadio('mode',s.mode);if(s.role)setRadio('role',s.role);if(s.mins)setRadio('mins',s.mins);if(s.hair)setRadio('hair',s.hair);if(s.cam)setRadio('cam',s.cam);if(s.mus)setRadio('mus',s.mus);
+    if(s.mode)setRadio('mode',s.mode);if(s.role)setRadio('role',s.role);if(s.mins)setRadio('mins',s.mins);if(s.hair)setRadio('hair',s.hair);if(s.cam)setRadio('cam',s.cam);if(s.mus)setRadio('mus',s.mus);if(s.gt)setRadio('gtype',s.gt);
     if(s.muted){muted=true;$('bSound').classList.add('off');}
   }catch(e){}
 }
@@ -3389,6 +3477,6 @@ if(window.claude&&window.claude.hot&&window.claude.hot.ready)window.claude.hot.r
 
 /* test hook: lets a page script read the game state */
 window.__game={get s(){return{demo,phase,paused,hugs,goal,timeLeft,bonesGot,dog:{x:dog.x,y:dog.y,stam:dog.stam},girl:{x:girl.x,y:girl.y,freeze:girl.freeze},trees:trees.length,bushes:bushes.length,puddles:puddles.length,balls:balls.length,fx:{dogSlow:dog.slow,dogTurbo:dog.turbo,dogCd:dog.abCd,girlSlow:girl.slow,girlCd:girl.abCd,sup:pickups.filter(p=>p.sup).length},cam3d,three:!!R3,head:{dog:dog.head,girl:girl.head},mode,myRole,netKind:net.kind,code:net.code,note:net.note,linked:!!(net.conn&&net.conn.open),ready:onlineReady(),remote:net.remote?{r:net.remote.r,n:net.remote.n,x:net.remote.x,y:net.remote.y}:null,stale:netStale,rid,curRid,pickups:pickups.length};}};
-Object.defineProperties(window.__game,{dog:{get(){return dog;}},girl:{get(){return girl;}}});window.__game.step=function(n,dt){for(let i=0;i<n;i++)update(dt||1/60);};window.__game.keys=keys;window.__game.piles=piles;Object.defineProperty(window.__game,'prints',{get(){return prints;}});window.__game.mus=function(){return{style:musStyle,step:MUS.step,state:AC?AC.state:'none',noise:!!MUS.noise};};
+Object.defineProperties(window.__game,{dog:{get(){return dog;}},girl:{get(){return girl;}}});window.__game.step=function(n,dt){for(let i=0;i<n;i++)update(dt||1/60);};window.__game.keys=keys;Object.defineProperty(window.__game,'gtype',{get(){return gtype;}});window.__game.piles=piles;Object.defineProperty(window.__game,'prints',{get(){return prints;}});window.__game.mus=function(){return{style:musStyle,step:MUS.step,state:AC?AC.state:'none',noise:!!MUS.noise};};
 })();
 </script>
